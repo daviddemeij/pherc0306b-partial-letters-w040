@@ -1,0 +1,40 @@
+{
+ "origin_flat_px": [
+  2176,
+  1792
+ ],
+ "shape_hw": [
+  1920,
+  7002
+ ],
+ "sources": [
+  {
+   "name": "letters",
+   "x0": 3776,
+   "y0": 1792,
+   "shape_hw": [
+    1920,
+    2880
+   ]
+  },
+  {
+   "name": "left",
+   "x0": 2176,
+   "y0": 1792,
+   "shape_hw": [
+    1920,
+    1856
+   ]
+  },
+  {
+   "name": "right",
+   "x0": 6426,
+   "y0": 1851,
+   "shape_hw": [
+    1344,
+    2752
+   ]
+  }
+ ],
+ "rule": "Per source: CT = mean of render layers 31-35; ink = Reader v3 depth pair (data/w040-v3/depthpair*, made by"
+}

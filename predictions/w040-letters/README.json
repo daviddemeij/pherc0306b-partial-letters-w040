@@ -1,0 +1,37 @@
+{
+ "segment": "segments/w040.tifxyz",
+ "window_nodes_r0_r1_c0_c1": [
+  90,
+  183,
+  190,
+  332
+ ],
+ "frame": {
+  "origin_flat_px": [
+   3776,
+   1792
+  ],
+  "shape_hw": [
+   1920,
+   2880
+  ],
+  "window_px_in_render": {
+   "x0": 24.0,
+   "y0": 8.0,
+   "x1": 2864.0,
+   "y1": 1868.0
+  },
+  "tile_origin_flat_px": [
+   0,
+   0
+  ],
+  "snap_px": 64,
+  "pixel_rule": "flat px (x, y) -> node ((x + 0.5)/20, (y + 0.5)/20); 1 px = 1 level-0 voxel",
+  "orientation": "raw (flat-map) frame; reading display = flip lr + ud"
+ },
+ "value": "uint8, 255 = Reader v3 ink probability 1; *_blind = reversed layer order (control)",
+ "depth": "d = window centre offset in voxels along the surface normal (positive = outward, away from the scroll axis)",
+ "depthpair": "per pixel max over d of mean(m_d, m_d+1), d=-4..+2; m_d averaged over 8 flips/transposes at d=-2,0,+1 (code/depthpair.py)",
+ "model": "Reader v3, HF domenicor046/reader-v3 @aee1d64, sha256 ea405417450abd8ace1b8ff79ebce3adb646c5e48ab95da46844d77efe984d8a",
+ "volume": "PHerc0306B/volumes/20250521133212-8.640um-1.2m-116keV-masked.zarr (level 0)"
+}

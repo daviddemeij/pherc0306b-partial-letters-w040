@@ -1,0 +1,120 @@
+{
+ "scroll": "PHerc0306B",
+ "scan": "20250521133212, 8.64 um, level 0",
+ "segment": "segments/w040.tifxyz (node = 20 vox; flat px = node x 20)",
+ "frame": "w040 flat px (x,y) = level-0 voxels along the surface; reading orientation (z increases down, winding angle increases right)",
+ "observer": "human (David de Meij), marked on Reader v3 depth-0 maps on 2026-10-22; not model output",
+ "letters": [
+  {
+   "letter": "theta",
+   "confidence": "sure",
+   "box_w040_flat_px_x0y0x1y1": [
+    5919,
+    2418,
+    6231,
+    2730
+   ],
+   "box_w040_nodes": {
+    "r0": 120.9,
+    "r1": 136.5,
+    "c0": 295.9,
+    "c1": 311.6
+   },
+   "size_mm_wh": [
+    2.7,
+    2.7
+   ]
+  },
+  {
+   "letter": "lambda",
+   "confidence": "maybe",
+   "box_w040_flat_px_x0y0x1y1": [
+    5636,
+    2316,
+    5886,
+    2690
+   ],
+   "box_w040_nodes": {
+    "r0": 115.8,
+    "r1": 134.5,
+    "c0": 281.8,
+    "c1": 294.3
+   },
+   "size_mm_wh": [
+    2.16,
+    3.23
+   ]
+  },
+  {
+   "letter": "gamma",
+   "confidence": "maybe",
+   "box_w040_flat_px_x0y0x1y1": [
+    6251,
+    2415,
+    6513,
+    2735
+   ],
+   "box_w040_nodes": {
+    "r0": 120.8,
+    "r1": 136.8,
+    "c0": 312.6,
+    "c1": 325.6
+   },
+   "size_mm_wh": [
+    2.26,
+    2.76
+   ]
+  },
+  {
+   "letter": "pi",
+   "confidence": "maybe",
+   "box_w040_flat_px_x0y0x1y1": [
+    5367,
+    2343,
+    5636,
+    2650
+   ],
+   "box_w040_nodes": {
+    "r0": 117.2,
+    "r1": 132.5,
+    "c0": 268.4,
+    "c1": 281.8
+   },
+   "size_mm_wh": [
+    2.32,
+    2.65
+   ]
+  },
+  {
+   "letter": "chi",
+   "confidence": "sure",
+   "box_w040_flat_px_x0y0x1y1": [
+    5061,
+    2344,
+    5326,
+    2697
+   ],
+   "box_w040_nodes": {
+    "r0": 117.2,
+    "r1": 134.8,
+    "c0": 253.1,
+    "c1": 266.3
+   },
+   "size_mm_wh": [
+    2.29,
+    3.05
+   ]
+  }
+ ],
+ "context_box_w040_flat_px": [
+  4720,
+  2113,
+  6660,
+  2944
+ ],
+ "context_centre_xyz_vox": [
+  5166,
+  4399,
+  8345
+ ]
+}

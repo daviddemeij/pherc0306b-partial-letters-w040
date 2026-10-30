@@ -1,0 +1,104 @@
+{
+ "crop_strip_px": [
+  0,
+  364,
+  7002,
+  1103
+ ],
+ "strip_origin_w040_flat_px": [
+  2176,
+  1792
+ ],
+ "letters": [
+  {
+   "letter": "theta",
+   "confidence": "sure",
+   "box_strip_px": [
+    3743,
+    626,
+    4055,
+    938
+   ],
+   "box_w040_flat_px": [
+    5919,
+    2418,
+    6231,
+    2730
+   ],
+   "width_mm": 2.7,
+   "height_mm": 2.7
+  },
+  {
+   "letter": "lambda",
+   "confidence": "maybe",
+   "box_strip_px": [
+    3460,
+    524,
+    3710,
+    898
+   ],
+   "box_w040_flat_px": [
+    5636,
+    2316,
+    5886,
+    2690
+   ],
+   "width_mm": 2.16,
+   "height_mm": 3.23
+  },
+  {
+   "letter": "gamma",
+   "confidence": "maybe",
+   "box_strip_px": [
+    4075,
+    623,
+    4337,
+    943
+   ],
+   "box_w040_flat_px": [
+    6251,
+    2415,
+    6513,
+    2735
+   ],
+   "width_mm": 2.26,
+   "height_mm": 2.76
+  },
+  {
+   "letter": "pi",
+   "confidence": "maybe",
+   "box_strip_px": [
+    3191,
+    551,
+    3460,
+    858
+   ],
+   "box_w040_flat_px": [
+    5367,
+    2343,
+    5636,
+    2650
+   ],
+   "width_mm": 2.32,
+   "height_mm": 2.65
+  },
+  {
+   "letter": "chi",
+   "confidence": "sure",
+   "box_strip_px": [
+    2885,
+    552,
+    3150,
+    905
+   ],
+   "box_w040_flat_px": [
+    5061,
+    2344,
+    5326,
+    2697
+   ],
+   "width_mm": 2.29,
+   "height_mm": 3.05
+  }
+ ]
+}
