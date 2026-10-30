@@ -5,8 +5,8 @@
 We found a row of letters on winding w040 of PHerc. 0306B, in the lower block of the scan (z 6912–9216, scan
 `20250521133212`, 8.64 µm). This repository releases everything needed to check it, reuse it or build on it:
 
-- **Segments:** the w040 surface the letters sit on, and the next winding's surface (w041), which continues the same
-  sheet to the right.
+- **Segments:** the w040 surface the letters sit on; the next winding's surface (w041), which continues the same sheet
+  to the right; and an independent ScrollFiesta reconstruction of the letter row.
 - **Labels:** five human-marked letters (two sure, three uncertain), with exact boxes.
 - **Predictions:** raw Reader v3 ink probabilities at seven depths, on both faces, for the letter row and its
   continuations to the left and right. Both a single-depth and a depth-combined map are included.
@@ -38,13 +38,14 @@ so read it with that control in mind.
 
 ```
 segments/      w040.tifxyz, w041.tifxyz         tifxyz (x/y/z.tif, meta.json); one node = 20 voxels
+               rebuild_Wa_p002.tifxyz           independent ScrollFiesta reconstruction (1 node per voxel)
 labels/        letters.json, letters_in_figure.json
-predictions/   w040-letters/  w040-left/  w041-right/
+predictions/   w040-letters/  w040-left/  w041-right/  rebuild-Wa_p002/ (d0, both faces)
                readerv3_d{-4..+2}.tif, readerv3_d{..}_blind.tif   raw Reader v3, uint8 (255 = probability 1)
                readerv3_depthpair.tif, readerv3_depthpair_blind.tif
                README.json   frame (flat-px origin), window, model and volume pins
 figures/       PHerc0306B_w040-letters.png, panel_A..E.png, stitch.json
-code/          stitch_w040.py, make_w040_figure.py, depthpair.py
+code/          stitch_w040.py, make_w040_figure.py, depthpair.py, select_w040.py, remote_w040.sh, render_w040.py
 ```
 
 ## How it was made
@@ -68,6 +69,11 @@ code/          stitch_w040.py, make_w040_figure.py, depthpair.py
 
 ## Checks
 
+- **Independent surface reconstruction.** We rebuilt the letter row from scratch, independent of the spiral fit: fresh
+  Socratic sheet predictions, then ScrollFiesta cube meshing and assembly. The rebuilt piece lies a median 1.4 voxels
+  from w040. On it, Reader v3 shows the same letters at the same places, and its blind face is nearly empty.
+  ![spiral fit vs independent rebuild](figures/w040-rebuild-vs-spiralfit.png)
+
 - **Blind-face control.** On the blind face, the same rule shows scattered blobs but none of the row's letter shapes
   (panel D).
 - **Reading orientation.** This was checked geometrically. In w040's flat frame, z increases downwards and the winding
@@ -84,8 +90,9 @@ code/          stitch_w040.py, make_w040_figure.py, depthpair.py
 ## Limits
 
 - **Five letters, three of them uncertain.** This is not a reading. We make no claim about the text.
-- **The right continuation is not a new surface.** It is the existing w041 surface, translated once. A dedicated
-  reconstruction of the join could sharpen it.
+- **The right continuation is not a new surface.** It is the existing w041 surface, translated once. Our ScrollFiesta
+  reconstruction of the join found the neighbouring sheet there (about 10–15 voxels away), not this one. The CT puts
+  w041 itself within 1–6 voxels of its sheet.
 - **All predictions come from one model, Reader v3.** Other public 9 µm models (Reader v2, dense-native, ink_9um,
   v8-in) were noisier on this scroll in our tests.
 

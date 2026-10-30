@@ -1,0 +1,9 @@
+{
+  "bbox": [[4224.028320, 3895.350830, 7680.040527], [5910.662109, 5210.936523, 8959.909180]],
+  "type": "seg",
+  "uuid": "Wa_p002",
+  "format": "tifxyz",
+  "scale": [0.99972479, 0.99988223],
+  "contested_tolerance_vox": 1.5000,
+  "invalid_contested_cells": 5849
+}

@@ -1,0 +1,7 @@
+{
+ "segment": "segments/rebuild_Wa_p002.tifxyz (ScrollFiesta piece, its own UV layout; 1 node per voxel)",
+ "how": "Socratic sheet predictions (checkpoint sha256 54db9a59...) + ScrollFiesta cube_mesh and long-budget sheet_assemble over the w040 letter row and the w040/w041 join (code/select_w040.py, code/remote_w040.sh); Reader v3 d0 on the piece (code/render_w040.py)",
+ "relation_to_w040": "median 1.4 voxels from the w040 surface over the letter row (same sheet); covers w040 flat x 4574-6574",
+ "value": "uint8, 255 = Reader v3 ink probability 1; *_blind = reversed layer order (control)",
+ "model": "Reader v3 @aee1d64, sha256 ea405417450abd8ace1b8ff79ebce3adb646c5e48ab95da46844d77efe984d8a"
+}
