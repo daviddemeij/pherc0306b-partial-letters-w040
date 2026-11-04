@@ -106,3 +106,8 @@ python code/depthpair.py OUT --map=-4=predictions/w040-letters/readerv3_d-4.tif 
 
 **Licence.** Code: MIT. Data, figures and labels: CC BY-NC 4.0, derived from Vesuvius Challenge open data. See
 `DATA_LICENSE.md`.
+
+<!-- reader-v3-screen-release -->
+## Reader v3 production screen
+
+[Download the Reader v3 screen release](https://github.com/daviddemeij/pherc0306b-partial-letters-w040/releases/tag/reader-v3-screen-v1.0.0): 536 production sections, 1,072 depth-0 TIFFs (both directions), plus 925 supplemental TIFFs. The 12 ZIP assets total 11,812,543,798 bytes. Production covers parts of z2304–13824, with missing windings; this is not whole-scroll coverage. No completed production inference was found for z0–2304 or z13824–15898. See [coverage, provenance and download instructions](reader-v3-screen/README.md). Inference data are CC BY-NC 4.0; the download helper is MIT licensed.
